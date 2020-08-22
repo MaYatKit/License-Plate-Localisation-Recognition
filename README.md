@@ -8,7 +8,7 @@ License plates localisation and recognition in a real-life scene:<br/>
 ## Building
 
 ### Dependencies
-1. [OpenVINO](https://software.intel.com/content/www/us/en/develop/tools/openvino-toolkit.html): OpenVINO is a toolkit for quickly developing computer vision applications which based on Convolution Neural Networks(CNNs), and it is hassle-free to optimize performance across platforms by utilize OpenVINO.
+1. [OpenVINO](https://software.intel.com/content/www/us/en/develop/tools/openvino-toolkit.html): OpenVINO is a toolkit for quickly developing computer vision applications which based on Convolution Neural Networks(CNNs), and it is hassle-free to optimize performance across platforms by leveraging OpenVINO.
 2. [MobileNet-SSD](https://github.com/tensorflow/models/blob/archive/research/object_detection/g3doc/tf1_detection_zoo.md): We choosed TensorFlow implementation of MobileNet-SSD to detect license plates, and train it on [BIT-Vehicle](http://iitlab.bit.edu.cn/mcislab/vehicledb/) dataset.
 3. [LPRNet](https://arxiv.org/pdf/1806.10447.pdf): We use a pre-trained LRPNet which combine character segmentation and recognition in one inference, and it is trained on a private Chinese license plate dataset.
 4. [OpenCV](https://opencv.org/): We use C++ version OpenCV to capture videos from a webcam and parse video frames and then fill into CNN models via OpenVINO APIs.
